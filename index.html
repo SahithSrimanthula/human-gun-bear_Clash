@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bear, Gun, Human Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bear, Gun, Human Game</h1>
+    <p>Choose your option:</p>
+    <button onclick="playGame('bear')">Bear</button>
+    <button onclick="playGame('gun')">Gun</button>
+    <button onclick="playGame('human')">Human</button>
+
+    <div class="result">
+        <p id="user-choice">Your choice: </p>
+        <p id="computer-choice">Computer's choice: </p>
+        <p id="winner">Result: </p>
+        <p id="score">Score: User 0 - Computer 0</p>
+    </div>
+</body>
+<script src="game.js"></script>
+</html>
