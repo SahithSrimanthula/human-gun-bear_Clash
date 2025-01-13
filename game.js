@@ -49,10 +49,10 @@ function playGame(userInput) {
     document.getElementById('score').textContent = `Score: User ${scoreofU} - Computer ${scoreofC}`;
 
     if (scoreofU > 5 && scoreofU > scoreofC) {
-        alert('Congratulations! You are the winner!');
+        message('Congratulations! You are the winner!');
         resetGame();
     } else if (scoreofC > 5 && scoreofC > scoreofU) {
-        alert('The computer wins! Better luck next time.');
+        message('The computer wins! Better luck next time.');
         resetGame();
     }
 }
